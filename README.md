@@ -27,22 +27,22 @@ The dataset contains information about individuals who were targeted with social
 
 **Steps Involved**:
 1. **Data Preprocessing**: 
-   - The dataset is cleaned and prepared for model training. Only relevant features are selected for input, and the target column (`Purchased`) is used as the output.
+   - The dataset is cleaned and prepared for model training. Only relevant features are selected for input, and the target column (Purchased) is used as the output.
    
 2. **Feature Selection**: 
-   - The features used to train the model are `Age` and `EstimatedSalary`, while the target column is `Purchased`.
+   - The features used to train the model are Age and EstimatedSalary, while the target column is Purchased.
    
 3. **Data Splitting**:
-   - The dataset is split into two parts: one for training the model and the other for testing it. This is done using a 75%-25% split using `train_test_split()`.
+   - The dataset is split into two parts: one for training the model and the other for testing it. This is done using a 75%-25% split using train_test_split().
 
 4. **Feature Scaling**:
-   - To make sure all the input features are on the same scale, the features are standardized using `StandardScaler`. This ensures that all the values of the features lie within the same range, which helps improve the model's performance.
+   - To make sure all the input features are on the same scale, the features are standardized using StandardScaler. This ensures that all the values of the features lie within the same range, which helps improve the model's performance.
 
 5. **Model Training**:
-   - A **Logistic Regression** model is used to predict the binary outcome (whether a person will buy a car or not). The model is trained using the training dataset (`x_train` and `y_train`).
+   - A **Logistic Regression** model is used to predict the binary outcome (whether a person will buy a car or not). The model is trained using the training dataset (x_train and y_train).
 
 6. **Model Prediction**:
-   - After the model is trained, it is tested on the test data (`x_test`) to predict whether the users in the test set will buy the car or not. The predicted results are compared to the actual values to evaluate the model's performance.
+   - After the model is trained, it is tested on the test data (x_test) to predict whether the users in the test set will buy the car or not. The predicted results are compared to the actual values to evaluate the model's performance.
 
 7. **Visualization**:
    - The results are visualized using scatter plots to compare the actual and predicted outcomes. Three scatter plots are created:
